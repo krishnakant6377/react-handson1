@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import Kaju from './Components/ClassComp';
+import Raju from "./Components/FunctionalComp";
+import{useState}from "react"
 
 function App() {
+  const [count,setCount] = useState(false);
+  function tara() {
+    setCount(!count)
+  }
+  const [oute,setoute] = useState(false);
+  function sitara() {
+    setoute(!oute)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="pp">
+    <h1 className="App">Styling Using Functional and Class Component</h1>
+    <button  onClick={tara} >To see Styling in Functional Component</button>
+    <button   onClick={sitara}>To see Styling in Class Component</button>
+    {count?<Raju />:null}
+    {oute?<Kaju />:null}
     </div>
   );
 }

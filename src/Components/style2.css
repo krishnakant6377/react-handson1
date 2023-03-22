@@ -1,0 +1,17 @@
+.classhead{
+    width: 500px;
+    height: 250px;
+    background-color: rebeccapurple;
+    text-align: center;
+    position: fixed;
+    bottom: 100px;
+    left: 740px ;
+    border-radius: 30px;
+    border: 3px solid #73AD21;
+    padding: 20px;
+    margin-top: 70px;
+    }
+    p{
+        margin-top: 20px;
+    }
+    
